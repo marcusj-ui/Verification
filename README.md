@@ -3,69 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>18+ Verification</title>
+  <title>Success</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #0a0a0a;
-      color: white;
+      margin: 0;
       height: 100vh;
+      background-color: white;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
     }
 
-    .container {
-      text-align: center;
+    .circle {
+      width: 300px;
+      height: 300px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     }
 
     .tick {
+      color: white;
       font-size: 180px;
-      color: #00ff88;
       line-height: 1;
-      margin-bottom: 20px;
-      animation: pop 0.6s ease;
-    }
-
-    @keyframes pop {
-      0% { transform: scale(0.3); }
-      50% { transform: scale(1.2); }
-      100% { transform: scale(1); }
-    }
-
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 15px;
-      color: #00ff88;
-    }
-
-    p {
-      font-size: 1.3rem;
-      color: #aaaaaa;
-    }
-
-    button {
-      margin-top: 40px;
-      padding: 12px 35px;
-      font-size: 1.1rem;
-      background: #00ff88;
-      color: black;
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
+      margin-top: -10px;
     }
   </style>
 </head>
 <body>
 
-  <div class="container" id="success">
-    <div class="tick">✔</div>
-    <h1>Access Granted</h1>
-    <p>You are verified as 18+</p>
+  <div class="circle">
+    <span class="tick">✔</span>
+  </div>
+
+</body>
+</html>
